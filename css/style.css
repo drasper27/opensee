@@ -114,6 +114,8 @@ justify-content: space-between;
 .texting .button{
     margin-top: 40px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .texting .button button{
@@ -126,6 +128,8 @@ justify-content: space-between;
     justify-content: center;
     border-radius: 10px;
     font-size: 18px;
+    background-color: white;
+    border: 1px solid blue;
 }
 
 .foot{
@@ -247,6 +251,7 @@ box-sizing: border-box;
     background-size: cover ;
     background-repeat: no-repeat;
     background-image: url(../image/you\ cann.jpg);
+   
 }
 
 .photo.two{
@@ -661,3 +666,154 @@ input:focus{
     text-decoration: none;
 }
 
+
+
+
+
+
+/* Media Queries for small screen */
+
+@media(max-width: 700px){
+    .head ul{
+        display: none;
+    }
+
+    .display{
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+       
+        width: 80% ;
+        margin: 0 auto;
+    }
+
+    .display .texting h1  {
+        font-size: 25px;
+    }
+    .display .texting span{
+        font-size: 18px;
+    }
+    .display .texting button{
+        align-items: center;
+        font-size: 14px;
+        padding: 8px 15px;
+        margin-bottom: 50px;
+    }
+
+    .learn{
+        display: none;
+    }
+
+    .collect{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+
+
+
+
+
+
+
+    .photo.one{
+        display: block;
+    }
+
+    .photo.three{
+        display: none;
+    }
+    
+    .photo.two{
+        display: none;
+    }
+
+
+
+
+
+    .trend-img.one{
+        display: block;
+        width: 400px;
+        height: 400px;
+    }
+    
+.trend-img.two{
+   display: none;
+}
+.trend-img.three{
+    display: none;
+}
+
+
+
+
+.create-icons{
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+ .imgs-text .img-text.one{
+    display: block;
+}
+
+.imgs-text .img-text.two{
+    
+   display: none;
+}
+
+.imgs-text .img-text.three{
+    
+  display: none;
+}
+
+
+
+
+
+
+.browses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+ }
+
+
+
+
+ .loops{
+    display: grid;
+    grid-template-columns: 1fr;
+  text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.open{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.openn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+}
+}
