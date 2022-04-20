@@ -84,6 +84,12 @@ font-size: 18px;
 
 
 
+.small{
+    display: none;
+}
+
+
+
 
 /* section main */
 
@@ -734,11 +740,186 @@ input:focus{
 
 
 
+
+
+/* from stlye2.css */
+
+.menu-btn{
+
+    cursor: pointer;
+   
+ }
+ 
+ .menu-btn .lines{
+     height: 3px;
+     width: 20px;
+     background-color: black;
+     margin-top: 3px;
+     margin-left: 10px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.side-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+   
+    background-color: white;
+   
+  padding: 10px;
+  width: 300px;
+  z-index: 80;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(229, 232, 235);
+  overflow: auto;
+    transform: translateX(500%);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+
+}
+
+
+.wallet.wa{
+    padding: 20px;
+    border-bottom: 1px solid rgb(229, 232, 235);
+}
+
+.wallet.wa i{
+    margin-right: 10px;
+}
+.wallet.wa h3{
+    font-size: 14px;
+}
+
+
+
+
+.walleting a{
+text-decoration: none;
+color: black;
+}
+
+
+
+
+.wallet img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.wallet{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+border: 1px solid rgb(218, 211, 211);
+padding:10px  20px;
+
+}
+
+.wallet.one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallet .again{
+    display: flex;
+    align-items: center;
+}
+
+.wallet h3{
+    font-size: 12px;
+}
+.wallet p{
+    font-size: 14px;
+    font-weight: 400;
+   
+    color: rgb(112, 122, 131);
+}
+
+.wallet.one button{
+    font-size: 12px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    padding: 4px 7px;
+}
+
+.wallet.one button.sol{
+    background-color: #d5d5d5;
+    color: #333;
+}
+
+
+
+
+.side-bar.show{
+    z-index: 2;
+    transform: translateX(0);
+   
+}
+
+
+
+
+
+
+
+
+
+
 /* Media Queries for small screen */
 
 
 
 @media (max-width:800px) {
+
+
+
+
+    .side-bar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 50px;
+       
+        background-color: white;
+       
+      padding: 10px;
+      width: 100vw;
+      z-index: 80;
+      height: 100vh;
+      background: rgb(255, 255, 255);
+      border: 1px solid rgb(229, 232, 235);
+      overflow: auto;
+        transform: translateX(500%);
+        transition: all 0.5s ease-in-out;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+    
+    }
+
+
+
+
+
+
+
 
     .head ul{
         display: none;
@@ -754,21 +935,40 @@ input:focus{
 
     .small i{
         margin-right: 30px;
-        font-size: 23px;
-        display: none;
+        font-size: 20px;
+       
     }
         .menu-btn{
     
            cursor: pointer;
-           z-index: 5;
+          
         }
         
         .menu-btn .lines{
             height: 3px;
-            width: 28px;
+            width: 20px;
             background-color: black;
-            margin-top: 5px;
+            margin-top: 3px;
+            margin-left: 10px;
         }
+
+        .menu-btn.close .lines{
+            height: 2px;
+            width: 15px;
+            background-color: black;
+            margin-top: 3px;
+            margin-left: 10px;
+        }
+    
+        .menu-btn.close .line1{
+            transform: rotate(45deg) translate(2px, 10px);
+            }
+            .menu-btn.close .line2{
+             opacity: 0;
+            }
+            .menu-btn.close .line3{
+                transform: rotate(-45deg) translate(-3px, -6px);
+            }
 
 
 
@@ -926,6 +1126,28 @@ input:focus{
 
 
 
+
+    .side-bar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 50px;
+       
+        background-color: white;
+       
+      padding: 10px;
+      width: 100vw;
+      z-index: 80;
+      height: 100vh;
+      background: rgb(255, 255, 255);
+      border: 1px solid rgb(229, 232, 235);
+      overflow: auto;
+        transform: translateX(500%);
+        transition: all 0.5s ease-in-out;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+    
+    }
+
 /* Header section */
 
 .inpu{
@@ -950,10 +1172,30 @@ input:focus{
     
     .menu-btn .lines{
         height: 3px;
-        width: 28px;
+        width: 20px;
         background-color: black;
-        margin-top: 5px;
+        margin-top: 3px;
+        margin-left: 10px;
     }
+    
+    .menu-btn.close .lines{
+        height: 2px;
+        width: 15px;
+        background-color: black;
+        margin-top: 3px;
+        margin-left: 10px;
+    }
+
+    .menu-btn.close .line1{
+        transform: rotate(45deg) translate(2px, 10px);
+        }
+        .menu-btn.close .line2{
+         opacity: 0;
+        }
+        .menu-btn.close .line3{
+            transform: rotate(-45deg) translate(-3px, -6px);
+        }
+        
 
     .head ul{
         display: none;
